@@ -1,0 +1,6 @@
+camera:
+  ros__parameters:
+    image:
+      topic: "camera/image_raw"
+      flip_v: true
+      flip_h: false

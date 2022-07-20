@@ -5,13 +5,13 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     config = os.path.join(
-        get_package_share_directory('stream'),
+        get_package_share_directory('odroid_camera'),
         'config',
         'camera.yaml'
         )
     return LaunchDescription([
         Node(
-            package = 'stream',
+            package = 'odroid_camera',
             executable = 'camera',
             output = 'screen',
             parameters = [config]
